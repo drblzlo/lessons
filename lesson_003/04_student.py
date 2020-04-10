@@ -11,4 +11,9 @@
 
 educational_grant, expenses = 10000, 12000
 
-# TODO здесь ваш код
+xy = educational_grant - expenses
+for i in range(9):
+    expenses *= 1.03
+    xy += educational_grant - expenses
+xy *= -1
+print('Студенту надо попросить ', round(xy, 2), 'рублей')

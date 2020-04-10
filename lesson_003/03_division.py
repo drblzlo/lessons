@@ -10,4 +10,11 @@
 
 a, b = 179, 37
 
-# TODO здесь ваш код
+print(a / b)
+print(a // b)
+print(a % b)
+i = 0
+while a > b:
+    a -= b
+    i += 1
+print(i, a, '/', b)
